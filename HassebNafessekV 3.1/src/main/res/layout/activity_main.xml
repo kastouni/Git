@@ -1,0 +1,123 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:tools="http://schemas.android.com/tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingBottom="@dimen/activity_vertical_margin"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:paddingRight="@dimen/activity_horizontal_margin"
+                                android:paddingTop="@dimen/activity_vertical_margin"
+                                tools:context=".MainActivity "
+                android:background="#ee2c0000">
+
+    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="ادخل معلوماتك الشخصية"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textIsSelectable="false"
+                        android:textSize="30dp"/>
+
+    <TextView
+                        android:id="@+id/Nom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="الإسم الشخصي: "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        android:textColor="#D4AF37"/>
+
+    <EditText
+                        android:id="@+id/usernameET"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/Nom"
+                        android:layout_toLeftOf="@+id/Nom"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignStart="@+id/textView1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/WHITE">
+                        <requestFocus />
+    </EditText>
+
+    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/Nom"
+                        android:layout_below="@+id/Nom"
+                        android:layout_marginTop="80dp"
+                        android:text=" البريد الرقمي:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_alignLeft="@+id/Nom"
+                        android:layout_alignStart="@+id/Nom"
+
+
+                        android:textStyle="bold"
+                        android:textColor="#D4AF37"/>
+
+    <EditText
+                        android:id="@+id/passwordET"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/email"
+                        android:layout_alignRight="@+id/usernameET"
+                        android:hint=" "
+                        android:layout_alignLeft="@+id/usernameET"
+                        android:layout_alignStart="@+id/usernameET"
+                        android:layout_marginTop="80dp"
+
+                        android:textColor="@color/WHITE"/>
+                        <!--android:inputType="textPassword" -->
+
+    <!--  <EditText
+        android:id="@+id/affichage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/loginBtn2"
+        android:layout_alignLeft="@+id/loginBtn"
+        android:layout_alignRight="@+id/loginBtn"
+
+        android:hint=" "  />  -->
+
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="94dp"
+        android:layout_height="40dp"
+        android:onClick="insererDonneesBase"
+        android:text="  إدخال "
+        android:textColor="#ee2c0000"
+        android:background="@drawable/goldboutonmain"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/passwordET"
+        android:layout_alignStart="@+id/passwordET"
+        android:layout_alignRight="@+id/passwordET"
+        android:layout_alignEnd="@+id/passwordET"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/goldintro"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginBtn"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zizkuz_menu.hassebnafssak" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HissabPage"
+            android:label="@string/title_activity_hissab_page" >
+        </activity>
+        <activity
+            android:name=".GraphActivity"
+            android:label="@string/title_activity_graph" >
+        </activity>
+        <activity
+            android:name=".TahdidAlAhdaf"
+            android:label="@string/title_activity_tahdid_al_ahdaf" >
+        </activity>
+        <activity
+            android:name=".ViewPagerHadaf"
+            android:label="@string/title_activity_view_pager_hadaf" >
+        </activity>
+        <activity
+            android:name=".ViewPagerHissab"
+            android:label="@string/title_activity_view_pager_hissab" >
+        </activity>
+        <activity
+            android:name=".ViewPagerGraph"
+            android:label="@string/title_activity_view_pager_graph" >
+        </activity>
+        <activity
+            android:name=".GrapheV2"
+            android:label="@string/title_activity_graphe_v2" >
+        </activity>
+        <activity
+            android:name=".HissabV2"
+            android:label="@string/title_activity_hissab_v2" >
+        </activity>
+        <activity
+            android:name=".HadafV2"
+            android:label="@string/title_activity_hadaf_v2" >
+        </activity>
+
+        <service
+            android:name=".RemplissageDonnesQuotidiennes"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".NatijaV2"
+            android:label="@string/title_activity_natija_v2" >
+        </activity>
+        <activity
+            android:name=".Natija_Weekly"
+            android:label="@string/title_activity_natija__weekly" >
+        </activity>
+        <activity
+            android:name=".Total"
+            android:label="@string/title_activity_total" >
+        </activity>
+    </application>
+
+</manifest>

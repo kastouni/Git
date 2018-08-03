@@ -1,0 +1,516 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="zizkuz_menu.hassebnafssak.HissabV2"
+                android:background="#ee2c0000">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/gold"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="إدخال العبادات التي قمة بها اليوم"
+        android:id="@+id/TitleHissab"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textIsSelectable="false"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/TitleHissab"
+        android:layout_marginTop="40dp"
+        >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/RadioGroupSalat"
+            >
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="نعم"
+                android:id="@+id/jama3a"
+                android:layout_weight="0.16"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+            <RadioButton
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="لا"
+                android:id="@+id/fard"
+                android:layout_weight="0.16"
+                android:checked="false"
+                android:layout_marginLeft="30dp"
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+        </RadioGroup>
+        <Button
+            android:layout_width="125dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="كل صلوات اليوم في قتها"
+            android:id="@+id/Salat"
+            android:layout_weight="0.35"
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:allowUndo="false"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroupQuran"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="جزء"
+                android:id="@+id/juz2"
+                android:layout_weight="0.16"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+            <RadioButton
+
+                android:text="لاشيء"
+                android:id="@+id/QuranRien"
+
+
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.16"
+                android:checked="false"
+                android:layout_marginLeft="30dp"
+
+
+                android:textStyle="bold"
+                android:textColor="#D4AF37"
+                android:buttonTint="@color/WHITE"/>
+        </RadioGroup>
+        <Button
+
+            android:text="تلاوة القرآن"
+            android:id="@+id/Quran"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.35"
+            android:layout_width="125dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/RadioGroupSiyam"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+
+
+            <RadioButton
+
+                android:text="نعم"
+                android:id="@+id/SiyamNaam"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.16"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+            <RadioButton
+
+                android:text="لا"
+                android:id="@+id/SiyamNon"
+
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.16"
+                android:checked="false"
+                android:layout_marginLeft="30dp"
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+        </RadioGroup>
+        <Button
+
+            android:text="الصيام"
+            android:id="@+id/Siyam"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.35"
+            android:layout_width="125dp"
+            android:layout_marginLeft="30dp"
+
+            android:layout_gravity="center"
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/line4"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line3"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/RadioGroupSadaqa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:text="نعم"
+                android:id="@+id/SadaqaNaam"
+
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.16"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+            <RadioButton
+
+                android:text="لا"
+                android:id="@+id/SadaqaNon"
+
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.16"
+                android:checked="false"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+        </RadioGroup>
+        <Button
+
+
+            android:text="إخراج صدقة"
+            android:id="@+id/Sadaqa"
+            android:layout_width="125dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.35"
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/line5"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line4"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/RadioGroupAdkarAssabah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+
+                android:text="نعم"
+                android:id="@+id/AdkarAssabahNaam"
+
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.16"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+
+            <RadioButton
+
+                android:text="لا"
+                android:id="@+id/AdkarAssabahNon"
+
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.16"
+                android:checked="false"
+                android:layout_marginLeft="30dp"
+
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+        </RadioGroup>
+        <Button
+
+            android:text="صلة رحم"
+            android:id="@+id/AdkarAlSabaah"
+            android:layout_width="125dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.35"
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/line6"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line5"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/RadioGroupAdkarAlmasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+
+                android:text="نعم"
+                android:id="@+id/AdkarAlMasaaNaam"
+
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.16"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+            <RadioButton
+
+                android:text="لا"
+                android:id="@+id/AdkarAlMasaa"
+
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.16"
+                android:checked="false"
+                android:layout_marginLeft="30dp"
+
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+        </RadioGroup>
+        <Button
+
+
+            android:text="ذكر الله"
+            android:id="@+id/AdkarAlMassaa"
+            android:layout_width="125dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.35"
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/line7"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line6"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroupQiyam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+
+                android:text="نعم"
+                android:id="@+id/HadithNaam"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.16"
+                android:checked="true"
+                android:layout_marginLeft="30dp"
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+            <RadioButton
+                android:text="لا"
+                android:id="@+id/HadithNon"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.16"
+                android:checked="false"
+                android:layout_marginLeft="30dp"
+
+
+                android:textColor="#D4AF37"
+                android:textStyle="bold"
+                android:buttonTint="@color/WHITE"/>
+
+        </RadioGroup>
+        <Button
+
+
+            android:text=" تعلم شيئ جديد"
+            android:id="@+id/Hadith"
+            android:layout_width="125dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.35"
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+
+
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/Idkhal"
+        android:layout_marginLeft="100dp"
+        android:textColor="#ee2c0000"
+        android:background="@drawable/gold"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="إدخال"
+        android:elegantTextHeight="true"
+        android:ellipsize="middle"
+        android:enabled="true"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+
+
+
+
+
+        />
+
+</RelativeLayout>

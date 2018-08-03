@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="zizkuz_menu.hassebnafssak.GrapheV2">
+
+    <item android:id="@+id/mainmenu"
+          android:title="القائمة الرئيسية"
+          android:orderInCategory="100"
+          android:textSize="9sp"
+          android:textColor="#FFFFFF"
+          android:icon="@drawable/moultazam"
+          app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/add1"
+        app:showAsAction="never"
+        android:title="إدخال المعلومات اليومية"
+        android:icon="@drawable/gold"
+        />
+
+
+
+</menu>

@@ -1,0 +1,761 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="zizkuz_menu.hassebnafssak.NatijaV2"
+                android:background="#ee2c0000">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarNatija"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/gold"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="المتابعة الشهرية"
+        android:id="@+id/TitleNatija"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/toolbarNatija"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/TitleNatija"
+        android:layout_marginTop="30dp"
+
+
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/Pourcentage1"
+            android:layout_weight="0.2"
+            android:textColor="#f8fff9"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:editable="false"
+            android:enabled="false"
+            android:textIsSelectable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="بنسبة    %"
+            android:id="@+id/TextPourcentage1"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TargetValue1"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="على"
+            android:id="@+id/textSur1"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PresentValue1"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <Button
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:text="الصلاة في وقتها"
+            android:id="@+id/Salat"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="10dp"
+
+
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PourcentageQu"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="#f8fff9"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingRight="0dp"
+            android:layout_gravity="right"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="بنسبة    %"
+            android:id="@+id/TextPourcentageQu"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TargetValueQu"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="على"
+            android:id="@+id/textSurQu"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PresentValueQu"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <Button
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:text="تلاوة القرآن"
+            android:id="@+id/Quran"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="10dp"
+
+
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PourcentageSi"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="#f8fff9"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingRight="0dp"
+            android:layout_gravity="right"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="بنسبة    %"
+            android:id="@+id/TextPourcentageSi"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TargetValueSi"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="على"
+            android:id="@+id/textSurSi"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PresentValueSi"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <Button
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:text="الصيام"
+            android:id="@+id/Siyam"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line4"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line3"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PourcentageSd"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="#f8fff9"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingRight="0dp"
+            android:layout_gravity="right"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="بنسبة    %"
+            android:id="@+id/TextPourcentageSd"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TargetValueSd"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:enabled="false"
+            android:editable="false"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="على"
+            android:id="@+id/textSurSd"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PresentValueSd"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <Button
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:text="إخراج صدقة"
+            android:id="@+id/Sadaqa"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line5"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line4"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PourcentageAS"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="#f8fff9"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingRight="0dp"
+            android:layout_gravity="right"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="بنسبة    %"
+            android:id="@+id/TextPourcentageAS"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TargetValueAS"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="على"
+            android:id="@+id/textSurAS"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PresentValueAS"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <Button
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:text="صلة رحم"
+            android:id="@+id/AdkarAlSabaah"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line6"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line5"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PourcentageAM"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="#f8fff9"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingRight="0dp"
+            android:layout_gravity="right"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="بنسبة    %"
+            android:id="@+id/TextPourcentageAM"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TargetValueAM"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="على"
+            android:id="@+id/textSurAM"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PresentValueAM"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"
+            android:textSize="15dp"/>
+
+        <Button
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:text="ذكر الله كثيرا"
+            android:id="@+id/AdkarAlMasaa"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line7"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line6"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PourcentageQi"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColor="#f8fff9"
+            android:textSize="@dimen/abc_text_size_body_2_material"
+            android:textStyle="bold"
+            android:paddingRight="0dp"
+            android:layout_gravity="right"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="بنسبة    %"
+            android:id="@+id/TextPourcentageQi"
+            android:layout_weight="0.2"
+            android:textColor="#ffd700"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TargetValueQi"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="على"
+            android:id="@+id/textSurQi"
+            android:layout_weight="0.2"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/PresentValueQi"
+            android:layout_weight="0.1"
+            android:textColor="#f8fff9"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:editable="false"
+            android:enabled="false"/>
+
+        <Button
+            android:textColor="#D4AF37"
+            android:background="#ee2c0000"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:layout_height="40dp"
+            android:text=" تعلم شيئ جدي"
+            android:id="@+id/Qiyam"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line8"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line7"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+    <Button
+
+        android:clickable="true"
+        android:text="تفاصيل"
+        android:id="@+id/detail"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:textColor="#ee2c0000"
+        android:background="@drawable/gold"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:layout_weight="0.3"
+        />
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:text="المجموع العام"
+            android:id="@+id/Total"
+            android:textColor="#ee2c0000"
+            android:background="@drawable/gold"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15dp"
+            android:layout_weight="0.3"
+            android:layout_alignTop="@+id/line8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <Button
+
+        android:clickable="true"
+        android:text="المجموع السنوي"
+        android:id="@+id/Annual"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:textColor="#ee2c0000"
+        android:background="@drawable/gold"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_weight="0.3"
+        android:layout_alignTop="@+id/line8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

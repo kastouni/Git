@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hasseb Nafssak</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">إختيارات</string>
+    <string name="title_activity_hissab_page">حاسب نفسك</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="title_activity_tahdid_al_ahdaf">TahdidAlAhdaf</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_fragment_container">FragmentContainer</string>
+    <string name="title_activity_view_pager_hadaf">ViewPagerHadaf</string>
+    <string name="title_activity_view_pager_hissab">ViewPagerHissab</string>
+    <string name="title_activity_view_pager_graph">ViewPagerGraph</string>
+    <string name="title_activity_graph_recycler_view">GraphRecyclerView</string>
+    <string name="title_activity_graphe_v2">GrapheV2</string>
+    <string name="title_activity_hissab_v2">HissabV2</string>
+    <string name="title_activity_hadaf_v2">HadafV2</string>
+    <string name="title_activity_natija_v2">NatijaV2</string>
+    <string name="title_activity_natija__weekly">Natija_Weekly</string>
+    <string name="title_activity_total">Total</string>
+
+</resources>

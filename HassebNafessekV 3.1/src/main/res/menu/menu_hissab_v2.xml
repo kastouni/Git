@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="zizkuz_menu.hassebnafssak.HissabV2">
+
+    <item android:id="@+id/mainmenu"
+          android:title="القائمة الرئيسية"
+          android:orderInCategory="100"
+          android:textSize="3sp"
+           app:showAsAction="ifRoom"/>
+
+      <item android:id="@+id/Target"
+            android:title="تحديد الأهداف"
+           app:showAsAction="never"/>
+
+      <item
+          android:id="@+id/add"
+          app:showAsAction="never"
+          android:title="إدخال المعلومات اليومية"/>
+
+      <item
+          android:id="@+id/stats"
+          app:showAsAction="never"
+          android:title="النتائج"
+
+          />
+      <item
+          android:id="@+id/graph"
+          app:showAsAction="never"
+          android:title="الرسوم البيانية"
+
+          />
+
+</menu>
